@@ -1,0 +1,35 @@
+.home-container {
+    display: flex;
+
+}
+
+.All-Movies {
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid red;
+    padding: 20px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Popular-Movies {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 9px solid red;
+    padding-left: 10px;
+}
+.view-all{
+    cursor: pointer;
+    color: red;
+}

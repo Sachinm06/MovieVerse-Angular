@@ -1,0 +1,20 @@
+<div class="login-container">
+    <img class="film" src="assets/images/l2.png" alt="">
+    <div class="logo">MovieVerse</div>
+    <div class="desc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio suscipit blanditiis fugit veniam ea voluptatem,
+        uatur laboriosam dolore fugiat quod doloremque harum unde, saepe
+        voluptatum minima.
+    </div>
+
+    <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+        <label for="check" class="text-warning">You must be older than 13 years old to enter this page
+           <br> <input type="checkbox" id="check" name="check" [(ngModel)]="check" required>
+       I agree with the Terms and Conditions </label>
+        <div class="errordiv" *ngIf="myForm.submitted && !check">
+            <p class="errormsg">Verification required</p>
+        </div>
+        <button type="submit" class="btn btn-warning text-white">Explore</button>
+       
+    </form>
+</div>
