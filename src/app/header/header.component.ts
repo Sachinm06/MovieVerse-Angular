@@ -14,7 +14,7 @@ constructor(private router:Router, private auth:AuthService) {
 }
 
 goToHome(){
-  this.router.navigate(['Home'])
+  this.router.navigate(['home'])
 }
 
 }
